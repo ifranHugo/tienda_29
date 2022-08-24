@@ -11,6 +11,9 @@
     return $format;
     
   }
+  function media(){
+    return BASE_URL."Assets/";
+  }
   //devuelven la direccion del footer y header admin
   function headerAdmin($data=""){
     $view_header=VIEWS."Template/header_admin.php";
@@ -22,6 +25,7 @@
     require_once ($view_modal);
 
   }
+   
     function footerAdmin($data=""){
     $view_footer=VIEWS."Template/footer_admin.php";
     require_once ($view_footer);
