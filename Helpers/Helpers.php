@@ -1,13 +1,30 @@
 <?php
+//devuelve constante
   function base_url(){
     return BASE_URL;
   }
+  //muestra informacion formateada
   function dep($data){
     $format  = print_r('<pre>');
     $format  .= print_r($data);
     $format  .= print_r('</pre>');
     return $format;
     
+  }
+  //devuelven la direccion del footer y header admin
+  function headerAdmin($data=""){
+    $view_header=VIEWS."Template/header_admin.php";
+    require_once ($view_header);
+
+  }
+    function getModal(string $nameModal,$data=""){
+    $view_modal=VIEWS."Template/Modals/{$nameModal}.php";
+    require_once ($view_modal);
+
+  }
+    function footerAdmin($data=""){
+    $view_footer=VIEWS."Template/footer_admin.php";
+    require_once ($view_footer);
   }
   function strClean($strCadena){
     $string = preg_replace(['/\s+/','/^\s|\s$/'],[' ',''], $strCadena);

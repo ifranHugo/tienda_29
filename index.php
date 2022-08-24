@@ -18,7 +18,6 @@ if(!empty($arrUrl[2])){
       $params .=$arrUrl[$i].',';
     }
     $params =trim($params,",");
-    echo $params;
   }
 }
 

@@ -8,6 +8,7 @@ require_once ("Autoload.php");
   private $strEmail;
   private $conexion;
 
+
   public function __construct(){
     $this->conexion = new Conexion();
     $this->conexion = $this->conexion->connect();

@@ -1,6 +1,6 @@
 <?php
 
-class homeModel extends mysql{
+class HomeModel extends mysql{
   public function __construct(){
     parent:: __construct();
   }

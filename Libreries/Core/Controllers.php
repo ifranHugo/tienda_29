@@ -3,7 +3,6 @@
 class Controllers {
   public function __construct(){
     $this->views = new Views();
-    $this->ejemplo = new VIews();
     $this->loadModel();
   }
   public function loadModel(){
