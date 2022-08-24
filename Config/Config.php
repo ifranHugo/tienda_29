@@ -12,7 +12,7 @@ define("DB_CHARSET","charset-utf8");
 
 
 //constantes de carpetas
-define("BASE_URL","http://localhost/cursos-desarrollo/tiendaVirtualCurso/");
+define("BASE_URL","https://ifranhugo.github.io/tienda_29/");
 define("LIBS","Libreries/");
 define("CORE","Libreries/Core/");
 define("VIEWS","Views/");
