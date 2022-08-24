@@ -1,7 +1,7 @@
 <?php
 
 //Load
-
+$controller=ucwords($controller);
 $controllerfile ="Controllers/".$controller.".php";
 
 if (file_exists($controllerfile)) {
